@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 
 Route::get('data_wilayah', 'FormPendaftaranController@data_wilayah')->name('data_wilayah');
-Route::get("form_pendaftaran", "FormPendaftaranController@form_pendaftaran");
+Route::get("/", "FormPendaftaranController@form_pendaftaran");
